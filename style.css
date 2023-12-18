@@ -1,0 +1,278 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.page-container {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    height: 100dvh;
+}
+
+/* left section stylings */
+
+.left-side {
+    background-color: #F2F2F2;
+    padding: 1.5rem 1rem;
+}
+
+.heading {
+    margin-bottom: 2rem;
+}
+
+.nav-main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-main a, .nav-link {
+    color: #000;
+}
+
+.nav-main a img {
+    padding-right: 8px;
+}
+
+.link-main {
+    margin-top: 2rem;
+}
+
+.point {
+    padding-top: 0.6rem; 
+    padding-left: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-main a:hover, .nav-main a:focus {
+    color: #610dcf;
+    background-color: #c3a8d1;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+/* This is model box style */
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 17rem;
+    padding-left: 5px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 20%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.0);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #f5f5f5;
+    margin: auto;
+    border: none;
+    width: 100%;
+    outline: none;
+    border-radius: 15px;
+}
+
+/* The Close Button */
+.close {
+    color: #ededed;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* This is model box style */
+
+/* inside model content styles */
+/* modal head */
+/* #D6EFFF */
+.modal-head {
+    background-color: #c2e7fd;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.modal-head h5 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.bars {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar {
+    display: inline-block;
+    width: 36px;
+    height: 10px;
+    border-bottom: 7px solid #6fa7dc;
+}
+
+.bar:first-child {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 10px;
+}
+
+.bar:last-child {
+    border-color: #b3cde48b;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 25px;
+}
+
+/* modal body */
+.modal-body {
+    width: 100%;
+    padding: 20px;
+    color: #756488;
+}
+
+.invite {
+    color: #000;
+}
+
+.modal-body i {
+    padding-right: 10px;
+}
+
+.modal-body div {
+    padding: 6px 0;
+}
+
+.modal-body img {
+    float: right;
+}
+
+.close {
+    color: #000;
+    float: none;
+}
+
+/* accordion */
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* footer */
+footer {
+    text-align:  center;
+}
+/* model's clicking button style */
+.modal-btn {
+    /* position: absolute;
+    left: 10px;
+    bottom: 10px; */
+    margin-top: 8rem;
+    width: 100%;
+}
+
+.btn-up {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #CEE4F2;
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.btn-up img {
+    padding-left: 3px;
+    display: inline-flex;
+}
+
+/* right section stylings */
+
+.right-section {
+    padding: 5rem 3rem;
+}
+
+.right-section h3 {
+    margin-top: 0.5rem;
+}
+
+.nav-li {
+    margin-top: 1.5rem;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* responsive section */
+@media (max-width: 768px) {
+    /* right responsive  */
+    .cards {
+        flex-direction: column;
+    }
+    .cards div {
+        margin-bottom: 1rem;
+    }
+    .page-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .right-section {
+        padding: 1rem;
+    }
+    /* left responsive */
+}
